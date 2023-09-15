@@ -1,5 +1,149 @@
-template-repository (1.0-1) unstable; urgency=medium
+pyrad (2.1-3) unstable; urgency=low
 
-  * Initial release
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 12.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Name, Repository,
+    Repository-Browse.
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 02 Jun 2022 21:40:05 -0400
+
+pyrad (2.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove trailing whitespaces
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support.
+
+ -- Ondřej Nový <onovy@debian.org>  Sun, 25 Aug 2019 10:16:44 +0200
+
+pyrad (2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (Closes: #866530)
+  * Drop d/patches/*, merged upstream.
+  * d/watch: use https URI
+  * d/control: drop XS-* attributes
+  * d/control: bump std-ver to 4.2.1
+
+ -- Aron Xu <aron@debian.org>  Mon, 22 Oct 2018 22:28:12 +0800
+
+pyrad (2.0-3) unstable; urgency=low
+
+  [ Jeremy Lainé ]
+  * Build both python-pyrad an python3-pyrad packages (Closes: #782931).
+  * Update URL in debian/watch file to use Debian PyPI redirector.
+  * Update Standards-Version to 3.9.6 (no changes).
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 26 May 2015 11:01:45 +0200
+
+pyrad (2.0-2) unstable; urgency=high
+
+  * Use a better random number generator to prevent predictable password
+    hashing and packet IDs (CVE-2013-0294, Closes: #700669).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Sat, 16 Feb 2013 09:52:59 +0100
+
+pyrad (2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Convert packaging to use debhelper 9 and dh_python2.
+  * Remove Conflicts/Replaces on antique pyrad package.
+  * Update Standards-Version to 3.9.3 (no changes).
+  * Update Homepage to http://pypi.python.org/pypi/pyrad.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Fri, 07 Sep 2012 12:55:28 +0200
+
+pyrad (1.2-1) unstable; urgency=low
+
+  * New upstream release (Closes: #532843).
+  * Change Build-Depends from python-all-dev to python.
+  * Update Standards-Version to 3.8.4 (no changes).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Fri, 19 Mar 2010 07:50:23 +0100
+
+pyrad (1.1-5) unstable; urgency=low
+
+  * Update Standards-Version to 3.8.1 (no changes).
+  * Add ${misc:Depends} to dependencies.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Sun, 03 May 2009 12:34:05 +0200
+
+pyrad (1.1-4) unstable; urgency=low
+
+  [ Jeremy Lainé ]
+  * Fix lintian spelling warning (Python vs python).
+  * Update Standards-Version to 3.8.0.
+
+  [ Jan Dittberner ]
+  * add debian/watch
+
+  [ Sandro Tosi ]
+  * debian/control
+    - switch Vcs-Browser field to viewsvn
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Thu, 20 Nov 2008 16:39:22 +0100
+
+pyrad (1.1-3) unstable; urgency=low
+
+  * Add Homepage, Vcs-Svn and Vcs-Browser fields to debian/control.
+  * Add Debian Python Modules Team to Uploaders.
+  * Update Standards-Version to 3.7.3.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Mon, 14 Jan 2008 11:02:31 +0100
+
+pyrad (1.1-2) unstable; urgency=low
+
+  * Add Build-Depends on python-setuptools (Closes: #453229).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Tue, 27 Nov 2007 23:22:30 +0100
+
+pyrad (1.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #448126).
+  * Change maintainer to Jeremy Lainé.
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Sun, 18 Nov 2007 11:41:37 +0100
+
+pyrad (0.9-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #420765, #430681).
+
+ -- Jeremy Lainé <jeremy.laine@m4x.org>  Sat, 30 Jun 2007 20:04:06 +0200
+
+pyrad (0.8-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+
+  [ Ana Beatriz Guerrero Lopez ]
+  * Update package to the last python policy (Closes: #380915),
+    this includes renaming from pyrad to python-pyrad.
+  * Bumped compat to 5.
+  * Bumped Standards-Version to 3.7.2, no changes required.
+
+  [ Pierre Habouzit ]
+  * Upload Ana's patch.
+
+ -- Pierre Habouzit <madcoder@debian.org>  Mon,  4 Sep 2006 13:35:04 +0200
+
+pyrad (0.8-1) unstable; urgency=low
+
+  * Initial packaging
+  * Closes: #204819: RFP: pyrad -- native python RADIUS implementation
+
+ -- Bjorn Ove Grotan <bgrotan@grotan.com>  Wed, 16 Feb 2005 08:08:00 +0100

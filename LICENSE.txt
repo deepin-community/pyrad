@@ -1,13 +1,5 @@
-This package was debianized by Bjorn Ove Grotan <bgrotan@grotan.com> on
-Mon, 27 Dec 2004 23:31:00 +0100.
-
-It was downloaded from http://www.wiggy.net/code/pyrad/
-
-Upstream Author: Wichert Akkerman <wichert@wiggy.net>
-
-Copyright:
-
-Copyright 2002,2003,2004 Wichert Akkerman
+Copyright 2002-2008 Wichert Akkerman. All rights reserved.
+Copyright 2007-2008 Simplon. All rights reserved.
 
 All rights reserved.
 
@@ -34,3 +26,4 @@ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
 OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGE.
+
